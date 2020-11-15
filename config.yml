@@ -1,0 +1,18 @@
+title: 'Twilio Quest: JavaScript'
+description: >-
+  This learning lab course is intended for the purpose of Bit Project's bootcamp
+  with Twilio on JavaScript.
+template:
+  repo: 'twilio-quest:-javascript-template'
+  name: 'twilio-quest:-javascript'
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
