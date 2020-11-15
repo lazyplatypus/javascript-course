@@ -19,7 +19,7 @@ steps:
         with: 0.0-response.md
         issue: 1
       - type: createIssue
-        title: Week 1: Fizzbuzz
+        title: Week 1
         body: 1.1-fizzbuzz.md
         
   - title: 'Week 1: Github'
