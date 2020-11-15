@@ -7,12 +7,59 @@ template:
   name: 'twilio-javascript-folder'
 before:
   - type: createIssue
-    title: Welcome!
-    body: new-issue.md
+    title: Prerequisite
+    body: 0.0-welcome.md
 steps:
-  - title: First step
-    description: The first step in your course
-    event: issues.assigned
-    link: '{{ repoUrl }}'
+  - title: 'Week 0: Welcome!'
+    description: Week 0 Description
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/1'
     actions:
+      - type: respond
+        with: 0.0-response.md
+        issue: 1
+      - type: createIssue
+        title: Week 1: Fizzbuzz
+        body: 1.1-fizzbuzz.md
+        
+  - title: 'Week 1: Github'
+    description: Week 1 Description
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/1'
+    actions:
+      - type: respond
+        with: 1.2-github.md
+      - type: createIssue
+        title: Week 2
+        body: 2.1-parsing.md
       - type: closeIssue
+        issue: 2
+
+  - title: 'Week 2: Concatenation'
+    description: Week 2 Description
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 2.2-sumarray.md
+      - type: createIssue
+        title: Week 3
+        body: 3.1-final.md
+      - type: closeIssue
+        issue: 3
+        
+  - title: 'Week 3: Final Project'
+    description: Week 3 Description
+    event: issue_comment.created
+    actions:
+      - type: respond
+        with: 3.2-roman.md
+      - type: createIssue
+        title: Week 4
+        body: 3.1-final.md
+      - type: closeIssue
+        issue: 4
+
+tags:
+  - Twilio
+  - Twilio Quest
+  - JavaScript
