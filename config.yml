@@ -3,8 +3,8 @@ description: >-
   This learning lab course is intended for the purpose of Bit Project's bootcamp
   with Twilio on JavaScript.
 template:
-  repo: 'twilio-quest:-javascript-template'
-  name: 'twilio-quest:-javascript'
+  repo: 'javascript-template'
+  name: 'twilio-javascript-folder'
 before:
   - type: createIssue
     title: Welcome!
