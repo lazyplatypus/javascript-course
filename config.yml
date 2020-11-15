@@ -1,10 +1,10 @@
-title: 'Twilio Quest: JavaScript'
+title: Learning the Basics of JavaScript (Bit Project + Twilio)
 description: >-
   This learning lab course is intended for the purpose of Bit Project's bootcamp
   with Twilio on JavaScript.
 template:
-  repo: 'javascript-template'
-  name: 'twilio-javascript-folder'
+  repo: javascript-template
+  name: twilio-javascript-folder
 before:
   - type: createIssue
     title: Prerequisite
@@ -21,7 +21,6 @@ steps:
       - type: createIssue
         title: Week 1
         body: 1.1-fizzbuzz.md
-        
   - title: 'Week 1: Github'
     description: Week 1 Description
     event: issue_comment.created
@@ -34,7 +33,6 @@ steps:
         body: 2.1-parsing.md
       - type: closeIssue
         issue: 2
-
   - title: 'Week 2: Concatenation'
     description: Week 2 Description
     event: issue_comment.created
@@ -46,7 +44,6 @@ steps:
         body: 3.1-final.md
       - type: closeIssue
         issue: 3
-        
   - title: 'Week 3: Final Project'
     description: Week 3 Description
     event: issue_comment.created
@@ -58,7 +55,6 @@ steps:
         body: 3.1-final.md
       - type: closeIssue
         issue: 4
-
 tags:
   - Twilio
   - Twilio Quest
